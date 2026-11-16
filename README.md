@@ -26,6 +26,12 @@ Quota information comes from local Codex snapshots. Automatic checks do not crea
 
 额度数据来自 Codex 本机快照。自动检查不会生成新的官方快照；没有金额数据时，费用仍标注为未知。
 
+## Custom character / 自定义角色
+
+A transparent GPT dragon chibi is included. See [preview, import steps and attribution](docs/GPT-CHARACTER.md).
+
+附带透明背景 GPT 小龙娘角色图，参见[预览、导入步骤与来源说明](docs/GPT-CHARACTER.md)。
+
 ## Windows installation / Windows 安装
 
 Install a Codex desktop version supporting plugins and Node.js 24 or later including npm. Download or clone the complete repository, then run `安装插件.cmd`. The first installation needs network access to download Electron. In the whale menu, select **Codex subscription**. The installer preserves a local rollback receipt.
