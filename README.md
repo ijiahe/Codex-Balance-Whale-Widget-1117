@@ -1,27 +1,46 @@
-# Codex Balance Whale Widget — Custom Build
+# Codex Balance Whale Widget — Custom Build / 定制版
 
 A customized Codex desktop companion based on [Codex-Whale-Public](https://github.com/Yang-huai406/Codex-Whale-Public), derived from the original [DeepSeek Balance Whale Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget).
 
-## Customizations
+这是一个 Codex 桌面小鲸鱼定制版，基于 [Codex-Whale-Public](https://github.com/Yang-huai406/Codex-Whale-Public) 修改，源自 [DeepSeek Balance Whale Widget](https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget)。
+
+## Customizations / 定制功能
 
 - Classic white thought bubbles with a blue outline and a wider text layout.
+
+  经典白底蓝边思考气泡，采用更舒展的文字排版。
+
 - Weekly remaining quota with an automatically updating reset countdown.
+
+  显示每周剩余额度，并自动更新额度重置倒计时。
+
 - Automatic checks for newer local quota snapshots every 30 seconds while the bubble is open.
+
+  气泡打开期间，每 30 秒自动检查本机是否有更新的额度快照。
+
 - Per-turn observed token usage notifications, with automatic return to the weekly quota display when it was already open.
+
+  每轮结束后弹出本轮已观测 token 用量；如果之前打开了周余气泡，提示结束后会恢复周余和倒计时。
 
 Quota information comes from local Codex snapshots. Automatic checks do not create new official snapshots. Unknown monetary costs remain marked as unknown.
 
-## Windows installation
+额度数据来自 Codex 本机快照。自动检查不会生成新的官方快照；没有金额数据时，费用仍标注为未知。
+
+## Windows installation / Windows 安装
 
 Install a Codex desktop version supporting plugins and Node.js 24 or later including npm. Download or clone the complete repository, then run `安装插件.cmd`. The first installation needs network access to download Electron. In the whale menu, select **Codex subscription**. The installer preserves a local rollback receipt.
 
-The repository name is independent of the internal plugin ID, which remains `api-balance-whale`. These are local customizations to v0.4.1, not an official upstream release. This repository contains no personal credentials, account settings, or usage history.
+安装支持插件的 Codex 桌面应用，以及 Node.js 24 或更新版本（包含 npm）。完整下载或克隆仓库后，运行 `安装插件.cmd`。首次安装需要联网下载 Electron。在小鲸鱼菜单中选择 **Codex 订阅**。安装器会保留本机回滚回执。
+
+The repository name is independent of the internal plugin ID, which remains `api-balance-whale`. These are local customizations to v0.4.1, not an official release from the original maintainers. This repository contains no personal credentials, account settings, or usage history.
+
+仓库名称与内部插件 ID 相互独立，内部 ID 保持为 `api-balance-whale`。本项目是在 v0.4.1 基础上的定制版本，并非原维护者发布的官方版本。仓库不包含个人凭据、账户设置或用量历史。
 
 Original attribution and licensing files are retained in `LICENSE`, `PROVENANCE.md`, and `THIRD_PARTY_NOTICES.md`.
 
----
+原作者署名和许可信息保留在 `LICENSE`、`PROVENANCE.md` 和 `THIRD_PARTY_NOTICES.md` 中。
 
-## Upstream documentation
+---
 
 # API 余额小鲸鱼 · Codex-v0.4(fixed)
 
